@@ -1,0 +1,7 @@
+**XXX Reserved Stockpile Frissítés és állapot nyomonkövetés**
+- Mindig győződj meg róla, hogy az adott helyen (Storage Depot / Aircraft Depot / Seaport)  minden elérhető XXX stockpile be van neked állítva. 
+- Minden nem publikus stockpile megszünik, ha 50 órán át nincs használva. Ilyenkor minden abban tárolt tárgy átkerül public storage-be. 
+- A lejárati számláló (Expiration) frissítéséhez  a stockpile megnyitása után nyojd rá az "óra kis pipával" ikonra, mely minden beállított stokpileidejét frissíti. A stockpile használata, item kivétele és hozzáadása is frissitti ezt a számlálót, de a helyes eljárás az elöbb említett gombra való kattintás. 
+- Ha frissítettél a fentebbi módon egy storage-t, akkor azt a fenti listában, a helység neve elött szereplő emote-tal reagálj erre a commentre.
+- A stockpile számláló reakciónként, de maximum 1 óránként automatikusan frissül. Ha szeretnéd a pontos hátralevő időt látni, reagálj a lentebbi listára bármilyen abban nem szereplő emote-al.
+- Ha reakció elküldése után nem frissül a számláló, akkor a bot nem működik megfelelően. Ilyenkor jelezd ezt a vezetés felé.

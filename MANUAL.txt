@@ -1,0 +1,19 @@
+**Használati leírás**
+A bot két text channellel dolgozik, az egyik számára az input, a másik az output.
+
+**Input channel**
+Az input channel kézzel van szerkesztve, és két poszt van benne. Az egyik a tényleges stockpile lista, melyben az adat az alábbi módon van felsorolva:
+- Első sor "regional indicator" emote-al kezdődik, amit a storage helyésg neve, és a tároló épület típusa követ
+- Ezután a ``` jelekkel kezdődő és befejező, soronként felsorolt stockpile név és kapcsolódó kód
+
+Ezek a stockpilok között egy üres sor van ideálisan, bár ez nem követelmény. A leírt kinézettől ne térjen el a poszt. Több helységet is tartalmazhat a poszt, melynek a legfőbb limitje a posztonkénti 2000 karakteres Discord limit.
+
+A másik post egy szöveges leírás, amely a frissítő személyeknek szól, és az outputnál lesz felhasználva, ahol kiegészül a stockpile lista utolsó frissítési dátumával is.
+
+**Output**
+Az output channel szintén két posztból áll, melyeket a bot hoz létre és kezel. Az első poszt a timer frissítő személyeknek szól, hogy mit, miként kell tenniük. Ez a poszt ki van egészítve egy automatikusan frissülő idő bélyeggel, ami az input szoba stockpile listájának frissitésési dátumára utal. 
+
+A másik post az interactive felület amin keresztül a felhasználók jelölhetik, hogy mikor végezték el a storagek frissitését. Ehhez az adott helység neve elött található "regional indicator" emottal kell reagálni a posztra. A poszt ekkor kiegésziti a helységet a felhasználó nevével, hogy mióta volt a frissités, és mennyi idő van még vissza a lejártáig, valamint egy zöld-sárga-piros kör emotettal, ami a frissités sürgőségére utal (vannak óra számok, nemtudom fejből). Ha 15 óra alá esik, vagy egy hely alapból ismeretlen adattal rendelkezik (init után), akkor a poszt végén figyelmeztet egy pingel és szöveggel. A bot reaction-nként vagy legkésőbb óránként frissiti ezt a posztot.
+
+**A botról**
+Egyszerü python bot, adatbázis meg minden egyéb nélkül.
